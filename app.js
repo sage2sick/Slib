@@ -500,7 +500,8 @@ function render() {
     };
     l.appendChild(r);
   });
-  
+  if (!list.length) l.appendChild(el("div", "mut", ""));
+  renderSel();
 }
 function toggle(id, idx, shift) {
   const list = shown();
