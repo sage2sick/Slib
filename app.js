@@ -500,7 +500,7 @@ function render() {
     };
     l.appendChild(r);
   });
-  if (!list.length) l.appendChild(el("div", "mut", ""));
+  if (!list.length) l.appendChild(el("div", "mut", "Nothing here"));
   renderSel();
 }
 function toggle(id, idx, shift) {
